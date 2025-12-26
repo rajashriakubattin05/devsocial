@@ -1,0 +1,110 @@
+{
+  "identity": {
+    "name": "DevSocial",
+    "archetype": "The Dark IDE",
+    "vibe": "Cyberpunk meets VS Code. Serious, high-contrast, immersive.",
+    "principles": [
+      "Code is Art: Syntax highlighting colors are the primary palette.",
+      "Terminal Aesthetics: Monospace headings, command-line prompts.",
+      "Focus Mode: Deep blacks, no distractions, high contrast.",
+      "Fluidity: Social media smoothness (60fps) with developer precision."
+    ]
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "JetBrains Mono",
+    "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;500;700&display=swap",
+    "usage": {
+      "headings": "font-mono tracking-tight font-bold",
+      "body": "font-sans tracking-normal",
+      "code": "font-mono text-sm"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#09090b",
+      "foreground": "#e4e4e7",
+      "card": "#121212",
+      "card_foreground": "#fafafa",
+      "primary": "#7c3aed",
+      "primary_foreground": "#ffffff",
+      "secondary": "#27272a",
+      "secondary_foreground": "#fafafa",
+      "accent": "#10b981",
+      "accent_foreground": "#000000",
+      "destructive": "#ef4444",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#7c3aed"
+    },
+    "gradients": {
+      "primary_gradient": "bg-gradient-to-r from-violet-600 to-indigo-600",
+      "code_gradient": "bg-gradient-to-r from-emerald-400 to-cyan-400",
+      "dark_overlay": "bg-gradient-to-b from-transparent to-black/80"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10",
+    "neon_glow": "shadow-[0_0_20px_rgba(124,58,237,0.3)]",
+    "scanlines": "bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))]",
+    "border_radius": {
+      "default": "rounded-md",
+      "card": "rounded-lg",
+      "button": "rounded-md"
+    }
+  },
+  "layout": {
+    "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-6",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_gap": "py-24",
+      "element_gap": "gap-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "sharp edges or small radius (rounded-md), solid colors, no gradients for secondary actions.",
+      "hover": "transform hover:-translate-y-0.5 transition-all duration-200"
+    },
+    "cards": {
+      "style": "bg-card border border-border/50 hover:border-primary/50 transition-colors",
+      "shadow": "shadow-none hover:shadow-lg hover:shadow-primary/5"
+    },
+    "inputs": {
+      "style": "bg-secondary/50 border-border focus:border-primary focus:ring-1 focus:ring-primary"
+    }
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1590010358311-55d7c0769a3a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "auth_background": "https://images.unsplash.com/photo-1645070858656-816d780df8e0?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "avatars": [
+      "https://images.pexels.com/photos/1181273/pexels-photo-1181273.jpeg",
+      "https://images.pexels.com/photos/1181522/pexels-photo-1181522.jpeg",
+      "https://images.pexels.com/photos/6964137/pexels-photo-6964137.jpeg",
+      "https://images.pexels.com/photos/5380607/pexels-photo-5380607.jpeg"
+    ],
+    "posts": [
+      "https://images.unsplash.com/photo-1684488624316-774ea1824d97?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1693386556810-43d9451bdda5?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.unsplash.com/photo-1565687981296-535f09db714e?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add the Google Fonts import to index.css immediately.",
+    "2. CONFIGURE TAILWIND: Update tailwind.config.js with the colors and font families defined above.",
+    "3. FORCE DARK MODE: Ensure the 'dark' class is always applied to the html/body tag, or default to dark variables.",
+    "4. CUSTOMIZE SHADCN: When using Shadcn components, override the default 'rounded-xl' with 'rounded-md' to match the developer aesthetic.",
+    "5. USE ICONS: Use 'lucide-react' for all icons. Keep them thin (stroke-width={1.5}).",
+    "6. DATA-TESTID: Add data-testid to all interactive elements (buttons, inputs, links).",
+    "7. NO GRADIENT TEXT: Avoid gradient text for body content. Use it ONLY for the main hero title.",
+    "8. LAYOUT: Use a sticky sidebar on the left for desktop, bottom nav for mobile."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Never use AI assistant Emoji characters."
+  ]
+}
